@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: baseline;
+    padding-right: 12vh;
+    padding-left: 12vh;
+    background-color: #6495ED;
+}
+button{
+    font-size: 24px;
+    height: 9vh;
+    background-color: #6495ED;
+    border: 0;
+    margin-top: 1vh;
+}
+.botao{
+    flex: 1;
+    justify-content: left;
+    width: 12rem;
+    margin-right: 30vh;
+    background-color: blue;
+    
+}
+.botao1{
+    background-color: blue;
+}

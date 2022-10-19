@@ -1,0 +1,34 @@
+@charset "UTF-8";
+body{
+    font: normal 16px arial, verdana, serif;
+    background-color: lightblue;
+    text-align: center;
+    margin: 5%;
+
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: justify;
+    font-style: italic;
+}
+p{
+    text-align: justify;
+    text-indent: 5%;
+
+}
+div{
+    position: relative;
+}
+.cabecalho{
+    text-align: center;
+}
+.infodacidade{
+    float: right;
+    position: relative;
+}
+.imagem{
+    float: right;
+    padding: 12px;
+}

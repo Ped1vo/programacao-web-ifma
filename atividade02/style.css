@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: baseline;
+    gap: 2vh;
+    padding-right: 12vh;
+    padding-left: 12vh;
+    background-color: #6495ED;
+}
+button{
+    font-size: 24px;
+    height: 9vh;
+    background-color: #6495ED;
+    border: 0;
+    margin-top: 1vh;
+}
+.botao{
+    flex: 1;
+    justify-content: left;
+    width: 12rem;
+    margin-right: 30vh;
+    background-color: blue;
+    
+}
+.botao1{
+    background-color: blue;
+}
+.cabecalho{
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    padding-right: 15%;
+    margin: auto;
+}
+.uma{
+    margin: 0 2vh 0 2vh;
+}
+.meioum{
+    padding: 3vh 4vh 3vh 4vh;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1vh solid;
+    border-color: blue;
+    background-image: url(./images/veneza-o-que-ver-e-fazer-grande-canal.jpg);
+    background-position: center;
+    justify-content: center;
+    color: rgb(138, 138, 240);
+}
+.meioumum{
+    font-size: 4vh;
+    
+}
+.meioumdois{
+    font-size: 3vh;
+    margin: 1vh 0 3vh 0;
+
+}
+.meioumtres{
+    color: white;
+    margin: 3vh 0 3vh 0;
+    
+}
+.meioumquatro{
+    width: 12rem;
+    background-color: orange;
+    color: white;
+    margin: 3vh 0 3vh 0;
+    padding: 1vh 0 1vh 0;
+}
+.meiodois{
+    display: flex;
+    flex-direction: column;
+    margin: 0 16rem 0 16rem;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.meiodoisum{
+    font-size: 6vh;
+    margin-top: 12vh;
+    color: rgb(138, 138, 240);
+}
+.meiodoisdois{
+    font-size: 4vh;
+    color: orange;
+    margin: 4vh;
+}
+.meiotres{
+    display:flex;
+    flex-direction: row;
+    margin: 0 16rem 2rem 16rem;
+    text-align: left;
+    padding-right: 15px;
+}
+.meiotresum{
+    padding-left: 2vh;
+    text-align: justify;
+
+}
+.meiotresdois{
+    font-size: 6vh;
+    color: rgb(138, 138, 240);
+}
+.meioquatrocinco{
+    background-color: #6495ED;
+}
+.meioquatro{
+    display:inline-block;
+    vertical-align: top;
+    padding-left: 40%;
+}
+.meioquatroum{
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding: 1.5rem;
+    font-size: 4vh;
+}
+.meioquatroquatro{
+    padding-bottom: 3vh;
+    padding-top: 5vh;
+}
+.meioquatrodois{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+}
+.meioquatro1{
+    display:inline-block;
+    vertical-align: top;
+
+}
+.meiocinco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 16rem 0 16rem;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.meioquatroum2{
+    display:inline-block;
+    vertical-align: top;
+    height: 200px;
+    width: 35%;
+    padding: 2vh 2vh 0 2vh;
+}
+.meiocinco1{
+    display:inline-block;
+    vertical-align: top;
+
+}
+.meioseisseis{
+    background-image: url(./images/primeira-viagem.jpg) no-repeat;
+    background-size: cover;
+    padding: 5em 0;
+}
+.meioseis{
+    text-align: center;
+    padding: 6vh 0 2vh 0;
+    
+
+}
+.meioseis2{
+    padding-right: 2vh;
+    display: inline-block;
+    vertical-align: top;
+}
+.meioseis3{
+    display: inline-block;
+    font-size: 4vh;
+    padding-left: 3vh;
+    text-align: center;
+    align-content: center;
+
+}
+.meioseisum{
+    display: flex;
+    gap: 10vh;
+    font-size: 3vh;
+    text-align: center;
+    margin: 12vh;
+}
+.meioseisum p{
+    font-size: 3vh;
+}
+footer{
+    display: flex;
+    gap: 12vh;
+    justify-content: center;
+    background-color: blue;
+    text-align: center;
+    align-self: baseline;    
+}
