@@ -11,11 +11,9 @@ public class Locacoes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @ManyToOne
     @JoinColumn(name = "clientes_id")
     private Clientes clientes;
-
     @ManyToOne
     @JoinColumn(name = "imoveis_id")
     private Imoveis imoveis;

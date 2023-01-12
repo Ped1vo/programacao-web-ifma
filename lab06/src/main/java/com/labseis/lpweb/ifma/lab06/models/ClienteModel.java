@@ -2,16 +2,16 @@ package com.labseis.lpweb.ifma.lab06.entities;
 
 import jakarta.persistence.*;
 
-import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 @Entity
 @Table(name = "tb_clientes")
-public class Clientes  implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class Clientes {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nome;
     private String cpf;
@@ -19,6 +19,9 @@ public class Clientes  implements Serializable {
     private String telefone;
     private String endereco;
     private LocalDate date;
+
+    @OneToMany(mappedBy = "clientes")
+    private List<Locacoes> locacoes;
 
     public Clientes() {
     }
@@ -104,8 +107,10 @@ public class Clientes  implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Clientes clientes = (Clientes) o;
         return Objects.equals(id, clientes.id);
     }
@@ -114,5 +119,12 @@ public class Clientes  implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
-}
 
+    public List<Locacoes> getLocacoes() {
+        return locacoes;
+    }
+
+    public void setLocacoes(List<Locacoes> locacoes) {
+        this.locacoes = locacoes;
+    }
+}

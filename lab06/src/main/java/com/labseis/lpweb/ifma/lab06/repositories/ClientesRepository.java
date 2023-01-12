@@ -11,8 +11,8 @@ import java.time.LocalDate;
 
 @Repository
 public interface ClientesRepository extends JpaRepository<Clientes, Long> {
-    //@Query("SELECT obj FROM Clientes obj WHERE obj.nascimento BETWEEN :minDate AND :maxDate ORDER BY obj.nome DESC")
+    // @Query("SELECT obj FROM Clientes obj WHERE obj.nascimento BETWEEN :minDate
+    // AND :maxDate ORDER BY obj.nome DESC")
     @Query("SELECT obj FROM Clientes obj WHERE obj.date BETWEEN :min AND :max ORDER BY obj.id DESC")
     Page<Clientes> findClientes(LocalDate min, LocalDate max, Pageable pageable);
 }
-
