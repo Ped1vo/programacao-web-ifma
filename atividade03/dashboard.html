@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atividade03 - Quitanda de Livros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="/css/index.css">
+
+</head>
+
+<body>
+  <header class="skin-light col-12 position-fixed" style="z-index: 9999;">
+    <a href="#" data-activates="slide-out"
+      class="btn btn-primary p-3 d-lg-none button-collapse position-absolute bg-transparent text-black"
+      id="btn-open-side" style="z-index: 1111"><i class="fas fa-bars"></i></a>
+
+    <nav class="navbar navbar-expand-lg col-11 m-auto navbar-dark bg-dark">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <img src="/books-clip-art-publicdomain.jpg" alt="logo" style="width: 40px;">
+        <a class="navbar-brand" href="/index.html">Quitanda de Livros</a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboard.html">Dashboard</a>
+            </li>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                Gêneros
+              </a>
+              <!-- Dropdown menu -->
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">desenvolvimento</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">internet</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">banco de dados</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">redes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">sistemas operacionais</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Outros</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <!-- Search form -->
+          <form class="d-flex input-group w-auto">
+            <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+              Buscar
+            </button>
+          </form>
+
+          <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-mdb-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pedro
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg-start" style="width: auto !important"
+                aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-capitalize" href="#">
+                  <span class="material-icons"> account_circle </span>
+                  <span class="text-end"> sua conta </span>
+                </a>
+
+                <a class="dropdown-item text-capitalize" href="#">
+                  <span class="material-icons"> logout </span>
+                  <span class="text-end"> sair </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Right Links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+  </header>
+
+  <main class="content container col-11 m-auto">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+      <div class="btn-toolbar dropdown">
+        <button class="btn btn-dark btn-sm me-2 dropdown-toggle" data-mdb-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" id="dropdownBooks">
+          <span class="fas fa-plus me-2"></span>Novo livro?
+        </button>
+        <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-0" aria-labelledby="dropdownBooks">
+          <a class="dropdown-item fw-normal rounded-top mr-2" href="#"><span
+              class="material-icons me-2">library_books</span>Novo
+            Livro</a>
+          <a class="dropdown-item fw-normal rounded-top mr-2" href="book-tables.html"><span
+              class="material-icons me-2">list</span>Gerir novos
+            livros</a>
+          <a class="dropdown-item fw-normal rounded-top mr-2" href="#"><span
+              class="material-icons me-2">lock_clock</span>Em
+            empréstimo</a>
+          <a class="dropdown-item fw-normal rounded-top mr-2" href="#"><span
+              class="material-icons me-2">timeline</span>Mais vendidos</a>
+
+          <div role="separator" class="dropdown-divider my-0"></div>
+          <a class="dropdown-item fw-normal rounded-bottom" href="#"><span
+              class="material-icons me-2">shield</span>Administração</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-outline-primary">
+          Compartilhar
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-primary">
+          Exportar
+        </button>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-12 mb-4">
+        <div class="card bg-secondary-alt shadow-sm">
+          <div class="card-header d-sm-flex flex-row align-items-center flex-0">
+            <div class="d-block mb-3 mb-sm-0">
+              <div class="h5 fw-normal mb-2">Valores de Venda</div>
+              <h2 class="h3">R$8.567,00</h2>
+              <div class="small mt-2">
+                <span class="fw-bold me-2">Ontem</span>
+                <span class="fas fa-angle-up text-success"></span>
+                <span class="text-success fw-bold">2.57%</span>
+              </div>
+            </div>
+            <div class="d-flex ms-auto">
+              <a href="#" class="btn btn-secondary text-dark btn-sm me-2">Mês</a>
+              <a href="#" class="btn btn-dark btn-sm me-3">Semana</a>
+            </div>
+          </div>
+          <div class="card-body p-2">
+            <div class="ct-chart-sales-value ct-double-octave ct-series-g">
+              <div class="chartist-tooltip"></div>
+              <svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line"
+                style="width: 100%; height: 100%">
+                <g class="ct-grids">
+                  <line x1="50" x2="50" y1="15" y2="305" class="ct-grid ct-horizontal"></line>
+                  <line x1="265.8395792643229" x2="265.8395792643229" y1="15" y2="305" class="ct-grid ct-horizontal">
+                  </line>
+                  <line x1="481.6791585286458" x2="481.6791585286458" y1="15" y2="305" class="ct-grid ct-horizontal">
+                  </line>
+                  <line x1="697.5187377929688" x2="697.5187377929688" y1="15" y2="305" class="ct-grid ct-horizontal">
+                  </line>
+                  <line x1="913.3583170572916" x2="913.3583170572916" y1="15" y2="305" class="ct-grid ct-horizontal">
+                  </line>
+                  <line x1="1129.1978963216145" x2="1129.1978963216145" y1="15" y2="305" class="ct-grid ct-horizontal">
+                  </line>
+                  <line x1="1345.0374755859375" x2="1345.0374755859375" y1="15" y2="305" class="ct-grid ct-horizontal">
+                  </line>
+                </g>
+                <g>
+                  <g class="ct-series ct-series-a">
+                    <path
+                      d="M50,305L50,305C121.947,295.333,193.893,288.889,265.84,276C337.786,263.111,409.733,230.889,481.679,218C553.626,205.111,625.572,204.467,697.519,189C769.465,173.533,841.412,73,913.358,73C985.305,73,1057.251,131,1129.198,131C1201.144,131,1273.091,53.667,1345.037,15L1345.037,305Z"
+                      class="ct-area"></path>
+                    <path
+                      d="M50,305C121.947,295.333,193.893,288.889,265.84,276C337.786,263.111,409.733,230.889,481.679,218C553.626,205.111,625.572,204.467,697.519,189C769.465,173.533,841.412,73,913.358,73C985.305,73,1057.251,131,1129.198,131C1201.144,131,1273.091,53.667,1345.037,15"
+                      class="ct-line"></path>
+                    <line x1="50" y1="305" x2="50.01" y2="305" class="ct-point" ct:value="0"></line>
+                    <line x1="265.8395792643229" y1="276" x2="265.84957926432287" y2="276" class="ct-point"
+                      ct:value="10"></line>
+                    <line x1="481.6791585286458" y1="218" x2="481.6891585286458" y2="218" class="ct-point"
+                      ct:value="30"></line>
+                    <line x1="697.5187377929688" y1="189" x2="697.5287377929687" y2="189" class="ct-point"
+                      ct:value="40"></line>
+                    <line x1="913.3583170572916" y1="73" x2="913.3683170572916" y2="73" class="ct-point" ct:value="80">
+                    </line>
+                    <line x1="1129.1978963216145" y1="131" x2="1129.2078963216145" y2="131" class="ct-point"
+                      ct:value="60"></line>
+                    <line x1="1345.0374755859375" y1="15" x2="1345.0474755859375" y2="15" class="ct-point"
+                      ct:value="100"></line>
+                  </g>
+                </g>
+                <g class="ct-labels">
+                  <foreignObject style="overflow: visible" x="50" y="310" width="215.8395792643229" height="20"><span
+                      class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 216px; height: 20px">Seg</span></foreignObject>
+                  <foreignObject style="overflow: visible" x="265.8395792643229" y="310" width="215.8395792643229"
+                    height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 216px; height: 20px">Ter</span></foreignObject>
+                  <foreignObject style="overflow: visible" x="481.6791585286458" y="310" width="215.83957926432294"
+                    height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 216px; height: 20px">Qua</span></foreignObject>
+                  <foreignObject style="overflow: visible" x="697.5187377929688" y="310" width="215.83957926432288"
+                    height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 216px; height: 20px">Qui</span></foreignObject>
+                  <foreignObject style="overflow: visible" x="913.3583170572916" y="310" width="215.83957926432288"
+                    height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 216px; height: 20px">Sex</span></foreignObject>
+                  <foreignObject style="overflow: visible" x="1129.1978963216145" y="310" width="215.839579264323"
+                    height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 216px; height: 20px">Sab</span></foreignObject>
+                  <foreignObject style="overflow: visible" x="1345.0374755859375" y="310" width="30" height="20"><span
+                      class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
+                      style="width: 30px; height: 20px">Dom</span></foreignObject>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-xl-4 mb-4">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <div class="row d-block d-xl-flex align-items-center">
+              <div
+                class="col-11 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                <div class="icon icon-shape icon-md icon-shape-primary rounded me-4 me-sm-0">
+                  <span class="fas fa-chart-line"></span>
+                </div>
+                <div class="d-sm-none">
+                  <h2 class="h5">Clientes</h2>
+                  <h3 class="mb-1">345,678</h3>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7 px-xl-0">
+                <div class="d-none d-sm-block">
+                  <h2 class="h5">Clientes</h2>
+                  <h3 class="mb-1">345k</h3>
+                </div>
+                <small>Ago 1 - Set 1,
+                  <span class="icon icon-small"><span class="fas fa-globe-europe"></span></span>
+                  Mundo</small>
+                <div class="small mt-2">
+                  <span class="fas fa-angle-up text-success"></span>
+                  <span class="text-success fw-bold">18.2%</span> últimos 30 dias
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-xl-4 mb-4">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <div class="row d-block d-xl-flex align-items-center">
+              <div
+                class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                <div class="icon icon-shape icon-md icon-shape-secondary rounded me-4">
+                  <span class="fas fa-cash-register"></span>
+                </div>
+                <div class="d-sm-none">
+                  <h2 class="h5">Receita</h2>
+                  <h3 class="mb-1">R$ 43.594,55</h3>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7 px-xl-0">
+                <div class="d-none d-sm-block">
+                  <h2 class="h5">Receita</h2>
+                  <h3 class="mb-1">R$ 43.594,55</h3>
+                </div>
+                <small>Out 1 - Nov 1,
+                  <span class="icon icon-small"><span class="fas fa-globe-europe"></span></span>
+                  Mundo</small>
+                <div class="small mt-2">
+                  <span class="fas fa-angle-up text-success"></span>
+                  <span class="text-success fw-bold">28.2%</span> Últimos 30 dias
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-xl-4 mb-4">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <div class="row d-block d-xl-flex align-items-center">
+              <div
+                class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                <div class="ct-chart-traffic-share ct-golden-section ct-series-a">
+                  <div class="chartist-tooltip"></div>
+                  <svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%"
+                    class="ct-chart-donut" style="width: 100%; height: 100%">
+                    <g class="ct-series ct-series-a">
+                      <path d="M35.647,59.087A41.319,41.319,0,1,0,74.944,5L74.944,25A21.319,21.319,0,1,1,54.668,52.907Z"
+                        class="ct-slice-donut-solid" ct:value="70"></path>
+                    </g>
+                    <g class="ct-series ct-series-b">
+                      <path
+                        d="M50.657,12.891A41.319,41.319,0,0,0,35.692,59.224L54.692,52.977A21.319,21.319,0,0,1,62.413,29.072Z"
+                        class="ct-slice-donut-solid" ct:value="20"></path>
+                    </g>
+                    <g class="ct-series ct-series-c">
+                      <path d="M74.944,5A41.319,41.319,0,0,0,50.541,12.976L62.353,29.115A21.319,21.319,0,0,1,74.944,25Z"
+                        class="ct-slice-donut-solid" ct:value="10"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7 px-xl-0">
+                <h2 class="h5 mb-3">Compartilhamento de Tráfego</h2>
+                <h6 class="fw-normal text-gray">
+                  <span class="icon w-20 icon-xs icon-secondary me-1"><span class="fas fa-desktop"></span></span>
+                  Desktop <a href="#" class="h6">60%</a>
+                </h6>
+                <h6 class="fw-normal text-gray">
+                  <span class="icon w-20 icon-xs icon-primary me-1"><span class="fas fa-mobile-alt"></span></span>
+                  Mobile Web <a href="#" class="h6">30%</a>
+                </h6>
+                <h6 class="fw-normal text-gray">
+                  <span class="icon w-20 icon-xs icon-tertiary me-1"><span class="fas fa-tablet-alt"></span></span>
+                  Tablet Web <a href="#" class="h6">10%</a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Atividade03 - Quitanda de Livros</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header class="skin-light col-12 position-fixed" style="z-index: 9999;">
+        <a href="#" data-activates="slide-out"
+          class="btn btn-primary p-3 d-lg-none button-collapse position-absolute bg-transparent text-black"
+          id="btn-open-side" style="z-index: 1111"><i class="fas fa-bars"></i></a>
+    
+        <nav class="navbar navbar-expand-lg col-11 m-auto navbar-dark bg-dark">
+          <!-- Container wrapper -->
+          <div class="container">
+            <!-- Navbar brand -->
+            <img src="/books-clip-art-publicdomain.jpg" alt="logo" style="width: 40px;">
+            <a class="navbar-brand" href="/index.html">Quitanda de Livros</a>
+    
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard.html">Dashboard</a>
+                </li>
+                <!-- Navbar dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Gêneros
+                  </a>
+                  <!-- Dropdown menu -->
+    
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#">desenvolvimento</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#">internet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#">banco de dados</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#">redes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#">sistemas operacionais</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Outros</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Left links -->
+    
+              <!-- Search form -->
+              <form class="d-flex input-group w-auto">
+                <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Search" />
+                <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                  Buscar
+                </button>
+              </form>
+    
+              <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-mdb-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Pedro
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-lg-start" style="width: auto !important"
+                    aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item text-capitalize" href="#">
+                      <span class="material-icons"> account_circle </span>
+                      <span class="text-end"> sua conta </span>
+                    </a>
+    
+                    <a class="dropdown-item text-capitalize" href="#">
+                      <span class="material-icons"> logout </span>
+                      <span class="text-end"> sair </span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+    
+              <!-- Right Links -->
+            </div>
+            <!-- Collapsible wrapper -->
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+      </header>
+    <main class="content container col-11 m-auto">
+        <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0 my-5 pb-2">
+                <h1 class="h4">Vamos organizar seus Livros?</h1>
+            </div>
+        </div>
+        <div class="card border-light shadow-sm mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-centered table-nowrap mb-0 rounded">
+                        <thead class="thead-light">
+                            <tr>
+                                <th class="border-0">#</th>
+                                <th class="border-0">Nome do livro</th>
+                                <th class="border-0">IBSN</th>
+                                <th class="border-0">Categoria</th>
+                                <th class="border-0">Valor</th>
+                                <th class="border-0">Citações</th>
+                                <th class="border-0">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-0">
+                                    <a href="#" class="text-primary fw-bold">1</a>
+                                </td>
+                                <td class="border-0 fw-bold">Os Magos</td>
+                                <td class="border-0">8520430287</td>
+                                <td class="border-0">
+                                    <a class="small fw-bold" href="#">Ficção</a>
+                                </td>
+                                <td class="border-0">R$ 25,00</td>
+                                <td class="border-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-xl-2 px-0">
+                                            <div class="small fw-bold">46%</div>
+                                        </div>
+                                        <div class="col-12 col-xl-10 px-0 px-xl-1">
+                                            <div class="progress progress-lg mb-0">
+                                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="51"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 51%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-0 text-success">
+                                    <span class="fw-bold">
+                                        <button type="button" class="btn btn-warning btn-floating">
+                                            <i class="material-icons">edit</i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-floating">
+                                            <i class="material-icons">delete</i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">
+                                    <a href="#" class="text-primary fw-bold">1</a>
+                                </td>
+                                <td class="border-0 fw-bold">1984</td>
+                                <td class="border-0">6589678006</td>
+                                <td class="border-0">
+                                    <a class="small fw-bold" href="#">Literatura Clássica</a>
+                                </td>
+                                <td class="border-0">R$ 11,00</td>
+                                <td class="border-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-xl-2 px-0">
+                                            <div class="small fw-bold">90%</div>
+                                        </div>
+                                        <div class="col-12 col-xl-10 px-0 px-xl-1">
+                                            <div class="progress progress-lg mb-0">
+                                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 1%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-0 text-success">
+                                    <span class="fw-bold">
+                                        <button type="button" class="btn btn-warning btn-floating">
+                                            <i class="material-icons">edit</i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-floating">
+                                            <i class="material-icons">delete</i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">
+                                    <a href="#" class="text-primary fw-bold">1</a>
+                                </td>
+                                <td class="border-0 fw-bold">Código Limpo</td>
+                                <td class="border-0">8576082675</td>
+                                <td class="border-0">
+                                    <a class="small fw-bold" href="#">Desenvolvimento</a>
+                                </td>
+                                <td class="border-0">R$ 90,89</td>
+                                <td class="border-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-xl-2 px-0">
+                                            <div class="small fw-bold">71%</div>
+                                        </div>
+                                        <div class="col-12 col-xl-10 px-0 px-xl-1">
+                                            <div class="progress progress-lg mb-0">
+                                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="51"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 71%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-0 text-success">
+                                    <span class="fw-bold">
+                                        <button type="button" class="btn btn-warning btn-floating">
+                                            <i class="material-icons">edit</i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-floating">
+                                            <i class="material-icons">delete</i>
+                                        </button>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="..." class="mx-auto">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn-open-side");
+        const sideNav = document.querySelector("#slide-out");
+        btn.addEventListener("click", () => {
+            sideNav.classList.toggle("open");
+        });
+    </script>
+</body>
+
+</html>
